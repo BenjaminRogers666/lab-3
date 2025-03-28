@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inicio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav w-100"> <!-- Ocupa todo el ancho disponible -->
+        <li class="nav-item me-4">
+          <%= link_to "Home", root_path, class: "nav-link fs-5" %> <!-- Texto un poco más grande -->
+        </li>
+        <li class="nav-item me-4">
+          <%= link_to "About", about_path, class: "nav-link fs-5" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", contact_path, class: "nav-link fs-5" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Contenido principal -->
+  <main class="container mt-4">
+    <%= yield %>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">© 2025 All Rights deserved.</p>
+      <div class="mt-2">
+        <a href="#" class="link_inutil_twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="link_inutil_instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

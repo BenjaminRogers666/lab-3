@@ -1,0 +1,38 @@
+<div class="container mt-5">
+  <!-- Mensaje flash (aparecerá después de enviar el formulario) -->
+  <% if flash[:notice] %>
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+      <%= flash[:notice] %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% end %>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5 col-xl-4">
+      <h1 class="text-center mb-3">Contáctanos</h1>
+      <p class="text-center mb-4">Comunícate con nosotros rellenando el formulario</p>
+
+      <%= form_with url: contact_path, method: :post, local: true, data: { turbo: false }, class: "form-compact" do |f| %>
+        <div class="mb-3">
+          <%= f.label :name, "Nombre", class: "form-label" %>
+          <%= f.text_field :name, class: "form-control form-control-sm", style: "max-width: 300px;", required: true %>
+        </div>
+        
+        <div class="mb-3">
+          <%= f.label :email, "Correo", class: "form-label" %>
+          <%= f.email_field :email, class: "form-control form-control-sm", style: "max-width: 300px;", required: true %>
+        </div>
+        
+        <div class="mb-3">
+          <%= f.label :message, "Mensaje", class: "form-label" %>
+          <%= f.text_area :message, class: "form-control", style: "min-width: 100%; max-width: 100%; resize: vertical;", rows: 3, required: true %>
+        </div>
+        
+        <div class="text-center mt-4">
+          <%= f.submit "Enviar", class: "btn btn-danger", style: "width: auto; min-width: 120px;" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
