@@ -1,4 +1,4 @@
-* "App de Mensajería"
+App de Mensajería
 
 Esta App está diseñada como una plataforma de mensajería entre empleados y contratantes interesados en oportunidades laborales y expandirse por este medio.
 
