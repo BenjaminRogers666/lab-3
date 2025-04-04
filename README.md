@@ -26,8 +26,8 @@ Fomentar una comunidad laboral activa en donde las empresas puedan reclutar tale
     - Para agilizar la comunicación con estos
 
     -Criterio de aceptación clave:
-        * Los mensajes se envían de forma rápida al seleccionar un usuario
-        * Se debe enviar el mensaje, aunque no haya mandado solicitud de amistad
+                * Los mensajes se envían de forma rápida al seleccionar un usuario
+                * Se debe enviar el mensaje, aunque no haya mandado solicitud de amistad
 
 
 
