@@ -38,8 +38,9 @@ Fomentar una comunidad laboral activa en donde las empresas puedan reclutar tale
     - Para identificar con quien estoy trabajando en la empresa.
 
     - Criterio de aceptación clave:
-        * La lista de empleados muestra nombre, puesto y empresa
-        * Una función  de búsqueda por nombre y cargo
+             * La lista de empleados muestra nombre, puesto y empresa
+             * Una función  de búsqueda por nombre y cargo
+
 
 
 * Navegar los MDs pendientes
